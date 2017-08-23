@@ -31,6 +31,3 @@ app.listen(port, () => {
 	console.log("Server Started at port 5000");
 });
 
- 1013569835319-906lk365vhihhkctunrgc65fugta05u1.apps.googleusercontent.com 
-
-  D3TCT_PZriG6FsUwe9SL19Pk 
