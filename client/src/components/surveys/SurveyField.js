@@ -1,13 +1,16 @@
 import React from "react";
 
-export default ({ input, label, meta: { touched, error } }) => {
+export default ({ input, label, name, meta: { touched, error } }) => {
 	return (
-		<div>
-			<label>{label}</label>
-			<input {...input}  style={{ marginBottom: '5px'}} />
-			<div className="red-text" style={{ marginBottom: '20px'}}>
-			{touched ? error : ''}
+		<div className="form-group">
+			<div className="form-control">
+				<label htmlFor={name}>{label}</label>
+				<input className="form-control" id={name} {...input} />
 			</div>
+				<div className="alert alert-warning form-control">
+					{touched ? error : ''}
+				</div>
+
 		</div>
 	);
 };

@@ -30,15 +30,14 @@ class SurveyForm extends Component {
 					)}
 				>
 					{this.renderFields()}
-					<Link to="/surveys" className="red btn-flat white-text">
+					<Link to="/surveys" className="btn btn-danger">
 						Cancel
 					</Link>
 					<button
-						className="teal btn-flat right white-text"
+						className="btn btn-primary"
 						type="submit"
 					>
 						Next
-						<i className="material-icons right">done</i>
 					</button>
 				</form>
 			</div>
